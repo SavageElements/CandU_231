@@ -7,10 +7,8 @@ namespace CandU_231
     class Employee : Person
     {
         public int ID;
-        
-        public void AddID
-        {
 
-        }
+        public int AddID;
+     
     }
 }
