@@ -8,5 +8,9 @@ namespace CandU_231
     {
         public int ID;
         
+        public void AddID
+        {
+
+        }
     }
 }
