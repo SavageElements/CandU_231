@@ -11,7 +11,13 @@
 
             person.SayName();
 
+
+            Employee employee = new Employee();
+            employee.ID = 3456;
+
+            employee.Quit();
         }
+
 
 
     }
