@@ -6,11 +6,25 @@ namespace CandU_231
 {
     class Employee : Person, IQuit
     {
-        public int ID;
+        public int ID { get; set; }
 
-        public int AddID;
+      public static bool operator ==(Employee employee, Employee employee2)
+        {
+            if (employee.ID == employee2.ID)
+                return true;
+            else
+                return false;
+        }
 
-       public void Quit ()
+        public static bool operator !=(Employee employee, Employee employee2)
+        {
+            if (employee.ID == employee2.ID)
+                return false;
+            else
+                return true;
+        }
+
+        public void Quit ()
         {
             Console.WriteLine("Take this job and shove it!");
         }

@@ -6,8 +6,10 @@ namespace CandU_231
 {
      public class Person
     {
-        public string firstName;
-        public string lastName;   
+        public string firstName { get; set; }
+        public string lastName { get; set; } 
+        
+        public int ID { set; get; }
         
         public void SayName ()
         {
